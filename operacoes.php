@@ -1,15 +1,12 @@
 <?php
 
 $idadeSuzana = 31;
-$idadeHenrique = 6;
-$idadeArthur = 3;
 
-$idadeFuturaSu = $idadeSuzana + 12;
-$idadeFuturaH = $idadeHenrique + 12;
-$idadeFuturaA = $idadeArthur + 12;
+$idadeFutura = $idadeSuzana + 12;
 
+$subtracao = 2 - 2;
+$multiplicacao = 2 * 2;
+$divisao = 2 / 2;
 
-echo $idadeFuturaSu;
-echo $idadeFuturaH;
-echo $idadeFuturaA;
+echo $idadeFutura;
  
