@@ -1,3 +1,4 @@
-Olá Mundo
-Suzana
-arthur fernandes
+<?php
+
+echo "Olá Mundo";
+echo "Suzana";
