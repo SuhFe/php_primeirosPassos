@@ -1,25 +1,26 @@
 <?php
 
 $contasCorrentes = [
-    12345678910 => [
+    '123.456.789-10' => [
         'titular' => 'Vinicius',
-        'saldo' => 1000
+        'saldo' => 2000
     ],
-    12345678911 => [
+    '123.456.789-11' => [
         'titular' => 'Maria',
         'saldo' => 10000
     ],
-    12325678912 => [
+    '123.456.789-12'=> [
     'titular' => 'Alberto',
     'saldo' => 300
-    ],
-    12325678913 => [
-        'titular' => 'Suzana',
-        'saldo' => 5000
-        ]
+    ]
+];
+
+//adicionando um novo elemento dentro de um array
+$contasCorrentes['123.456.789-13'] = [
+    'titular' => 'Suzana',
+    'saldo' => 5000
 ];
 
 foreach ($contasCorrentes as $cpf => $conta) {
-    echo $cpf . PHP_EOL;
-    echo $conta['titular'] . PHP_EOL; 
+    echo $cpf . " " . $conta['titular'] . " = " . $conta['saldo'] . PHP_EOL; 
 }
