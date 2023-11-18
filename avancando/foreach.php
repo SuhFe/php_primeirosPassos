@@ -1,18 +1,25 @@
 <?php
 
-$conta1 = [
-    'titular'=> 'Vinicius', 
-    'saldo'=> 1000
+$contasCorrentes = [
+    12345678910 => [
+        'titular' => 'Vinicius',
+        'saldo' => 1000
+    ],
+    12345678911 => [
+        'titular' => 'Maria',
+        'saldo' => 10000
+    ],
+    12325678912 => [
+    'titular' => 'Alberto',
+    'saldo' => 300
+    ],
+    12325678913 => [
+        'titular' => 'Suzana',
+        'saldo' => 5000
+        ]
 ];
 
-$conta2 = [
-    'titular'=> 'Suzana', 
-    'saldo'=> 5000
-];
-
-$conta3 = [
-    'titular'=> 'Paulo', 
-    'saldo'=> 500
-];
-
-echo $conta1['titular'];
+foreach ($contasCorrentes as $cpf => $conta) {
+    echo $cpf . PHP_EOL;
+    echo $conta['titular'] . PHP_EOL; 
+}
